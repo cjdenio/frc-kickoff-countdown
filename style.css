@@ -142,3 +142,20 @@ button:focus{
 button:active{
     transform: translateY(2px);
 }
+
+#icons{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    bottom: 0;
+
+    padding: 10px;
+
+    background-color: rgba(50, 50, 50, 0.8);
+
+    border-radius: 10px 10px 0 0;
+}
+#icons i{
+    font-size: 30px;
+    padding: 0 10px;
+}
