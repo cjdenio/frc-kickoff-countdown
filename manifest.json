@@ -4,5 +4,8 @@
     "manifest_version": 2,
     "chrome_url_overrides": {
         "newtab": "newtab.html"
+    },
+    "icons": {
+        "1080": "icon.png"
     }
 }
