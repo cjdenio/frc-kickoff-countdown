@@ -33,3 +33,9 @@ function timeToUtc(currentTime){
 document.getElementById("watch").onclick = function(e){
     window.open("https://twitch.tv/firstinspires")
 }
+
+if(!CSS.supports('backdrop-filter', 'blur(7px)')){
+    // What if we can't use backdrop-filter?
+    // Make the background less see-through
+    document.getElementById("box").style.backgroundColor = "rgba(50, 50, 50, 0.93)";
+}

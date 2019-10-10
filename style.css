@@ -159,3 +159,11 @@ button:active{
     font-size: 30px;
     padding: 0 10px;
 }
+
+/* Add explicit font sizes, for Firefox */
+a{
+    font-size: 12px;
+}
+h2{
+    font-size: 18px;
+}
