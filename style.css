@@ -155,9 +155,27 @@ button:active{
 
     border-radius: 10px 10px 0 0;
 }
-#icons i{
+
+#extension{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+
+    padding: 10px;
+
+    background-color: rgba(50, 50, 50, 0.8);
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+#icons i, #extension i{
     font-size: 30px;
     padding: 0 10px;
+}
+
+#extension i{
+    font-size: 40px;
 }
 
 /* Add explicit font sizes, for Firefox */
