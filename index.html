@@ -1,58 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>FRC Kickoff Countdown</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+
     <style>
-        *{
+        * {
             user-select: none;
             -webkit-user-drag: none;
         }
-        body, html{
+
+        body,
+        html {
             height: 100%;
             margin: 0;
         }
-        body{
+
+        body {
             background-image: linear-gradient(to right, #37d8ff, #00c089);
         }
 
-        #container{
+        #container {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
         }
 
-        #box{
+        #box {
             padding: 30px;
             display: inline-block;
             background-color: rgba(50, 50, 50, 0.4);
             border-radius: 40px;
+
+            text-align: center;
         }
 
-        #logo{
+        #logo {
             width: 500px;
         }
 
-        #extensions{
+        #extensions {
             margin-top: 20px;
         }
 
-        #firefox{
+        #firefox {
             float: right;
-            background-color: white;
+        }
+
+        button {
+            border: 3px solid white;
+            border-radius: 1000px;
+            font-size: 20px;
+            padding: 15px 25px;
+            background-color: transparent;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            margin-top: 15px;
+
+            font-weight: bold;
+
+            transition: box-shadow 300ms, transform 0ms;
+
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0px 0px 0px 3px rgb(0, 175, 255);
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        #extensions a button i{
+            font-size: 40px;
+            font-weight: normal;
+            margin-right: 10px;
+        }
+        #extensions a button > *{
+            vertical-align: middle;
+        }
+
+        #extensions button{
+            margin: 0 10px;
         }
     </style>
 </head>
+
 <body>
     <div id="container">
         <div id="box">
             <img src="logo.png" id="logo" /><br />
             <div id="extensions">
-                <a href="https://chrome.google.com/webstore/detail/jnjbaelllbbkndohngaafdmlpljhgije" target="_blank"><img id="chrome" src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png" /></a>
-                <a href="https://addons.mozilla.org/en-US/firefox/addon/frc-kickoff-countdown/" target="_blank"><img src="firefox.png" id="firefox" /></a>
+                <a href="https://chrome.google.com/webstore/detail/jnjbaelllbbkndohngaafdmlpljhgije"
+                    target="_blank">
+                    <button>
+                        <i class="fab fa-chrome"></i>
+                        <span>Get for Chrome</span>
+                    </button>
+                </a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/frc-kickoff-countdown/" target="_blank">
+                    <button id="firefox">
+                        <i class="fab fa-firefox"></i>
+                        <span>Get for Firefox</span>
+                    </button>
+                </a>
             </div>
+            <a href="/countdown">
+                <button>
+                    <span>View online</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </a>
         </div>
     </div>
 </body>
+
 </html>
